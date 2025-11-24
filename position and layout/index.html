@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Positioning  -->
+    <div class="h-40 w-1/2 bg-red-200 relative">
+      <p>Parent Container</p>
+      <div class="absolute bg-orange-500 h-10 bottom-0 right-0 p-2">Child</div>
+    </div>
+    <!-- top left  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute h-16 w-16 left-0 top-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- top right  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute h-16 w-16 right-0 top-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- bottom left  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute h-16 w-16 left-0 bottom-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- bottom right  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute h-16 w-16 right-0 bottom-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- span top edge  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute h-16 top-0 inset-x-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- span left edge  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute w-16 top-0 inset-y-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- span right edge  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute w-16 top-0 right-0 inset-y-0 bg-yellow-300">
+        Child
+      </div>
+    </div>
+    <!-- span bottom edge  -->
+    <div class="h-32 w-32 relative bg-yellow-100 m-5">
+      <div class="absolute h-16 bottom-0 inset-x-0 bg-yellow-300">Child</div>
+    </div>
+    <!-- displays  -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere,
+      possimus voluptas
+      <span class="bg-cyan-500 font-bold inline">This is inline</span>molestiae
+      necessitatibus modi, eius voluptate atque eligendi veniam sed amet,
+      dolores totam. Natus necessitatibus dolore a
+      <span class="bg-cyan-500 font-bold inline-block"
+        >This is inline block</span
+      >accusamus delectus iste repudiandae vero quam corrupti quos.
+      <span class="bg-cyan-500 font-bold block">This is block</span>Tempore
+      dolor esse consequatur minus delectus quas iure iste at exercitationem
+      consequuntur explicabo illo, corporis ab dolore aut aspernatur id rerum
+      quod architecto sequi.
+      <span class="bg-cyan-500 font-bold hidden">This is hidden</span>Lorem
+      ipsum dolor sit amet.
+    </div>
+    <!-- z-indexing  -->
+    <div class="relative h-36 bg-rose-200 mx-auto">
+      <div class="absolute h-24 w-24 top-0 left-0 bg-blue-100">1</div>
+      <div class="absolute h-24 w-24 top-0 left-24 bg-blue-200">2</div>
+      <div class="absolute h-24 w-24 top-0 left-48 bg-blue-300">3</div>
+      <div class="absolute h-24 w-24 top-0 left-72 bg-blue-400">4</div>
+      <div class="absolute h-24 w-24 top-0 left-96 bg-blue-500">5</div>
+      <div class="absolute h-24 w-24 top-0 left-120 bg-blue-600">6</div>
+    </div>
+  </body>
+</html>
