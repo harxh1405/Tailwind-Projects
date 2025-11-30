@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- flex alignment and wrapping -->
+    <div
+      class="flex items-center justify-between flex-wrap h-72 w-full bg-gray-100 md:flex-row"
+    >
+      <div class="p-10 border border-blue-300 bg-blue-100">item 1</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">item 2</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">item 3</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">item 4</div>
+    </div>
+    <!-- gap and ordering  -->
+    <div
+      class="flex flex-col flex-wrap items-center justify-between h-72 w-full bg-gray-300 gap-4 md:flex-row"
+    >
+      <div class="p-10 border order-2 border-blue-300 bg-blue-100">1</div>
+      <div class="p-10 order-3 border border-blue-300 bg-blue-100">2</div>
+      <div class="p-10 order-4 border border-blue-300 bg-blue-100">3</div>
+      <div class="p-10 order-1 border border-blue-300 bg-blue-100">4</div>
+    </div>
+    <!-- grow and shrink  -->
+    <div class="flex w-full bg-gray-500 md:flex-row">
+      <!-- flex initial is default, allows items to shrink but not grow  -->
+      <div class="flex-initial w-64 p-10 border border-blue-300 bg-blue-100">
+        item 1
+      </div>
+      <!-- flex none does not allow to shrink or grow  -->
+      <div class="flex-none w-64 p-10 border border-blue-300 bg-blue-100">
+        item 2
+      </div>
+      <!-- flex-auto allows for both growing and shrinking  -->
+      <div class="flex-auto w-64 p-10 border border-blue-300 bg-blue-100">
+        item 3
+      </div>
+      <!-- flex-1 will alow the content to grow and shrink ignoring its initial size  -->
+      <div class="flex-1 p-10 border border-blue-300 bg-blue-100">item 4</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">item 5</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">item 6</div>
+    </div>
+    <!-- evenly distributed columns  -->
+    <div class="flex text-center">
+      <div class="flex-1 bg-blue-100">Hello</div>
+      <div class="flex-1 bg-blue-100">Hello</div>
+      <div class="flex-1 bg-blue-100">Hello</div>
+    </div>
+  </body>
+</html>
